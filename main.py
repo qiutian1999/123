@@ -18,6 +18,6 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 
-data = {"小猫咪的坏心眼可多着呢":}
+data = {"小猫咪的坏心眼可多着呢"}
 res = wm.send_template(user_id, template_id, data)
 print(res)
