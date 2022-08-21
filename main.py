@@ -17,6 +17,6 @@ template_id = os.environ["TEMPLATE_ID"]
 client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
-
-res = wm.send_template(user_id, template_id)
+data={"xiaomaomi"}
+res = wm.send_template(user_id, template_id, data)
 print(res)
