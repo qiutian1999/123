@@ -18,6 +18,5 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 
-data = {"temperature":{"value":temperature}}
-res = wm.send_template(user_id, template_id, data)
+res = wm.send_template(user_id, template_id)
 print(res)
